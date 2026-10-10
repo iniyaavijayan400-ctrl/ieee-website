@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmayi | My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fff8fc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #9b59b6, #e84393);
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            font-size: 27px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ffeaa7;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #fce4ec, #eee1ff);
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 65px);
+            color: #8e44ad;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            color: #d63384;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d63384;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #8e44ad;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 34px;
+            color: #8e44ad;
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .skill, .project {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #8e44ad18;
+            transition: 0.3s;
+        }
+
+        .skill {
+            min-width: 130px;
+            color: #9b59b6;
+            font-weight: bold;
+        }
+
+        .skill:hover, .project:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px #8e44ad30;
+        }
+
+        .project {
+            width: 280px;
+            border-top: 4px solid #d63384;
+        }
+
+        .project h3 {
+            color: #d63384;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: #f4e7ff;
+        }
+
+        .contact p {
+            margin: 12px 0;
+        }
+
+        .contact a {
+            color: #8e44ad;
+        }
+
+        footer {
+            background: #6c3483;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 6px;
+                display: inline-block;
+            }
+
+            section {
+                padding: 50px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Chinmayi ✨</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Hi, I'm Chinmayi!</h1>
+        <h2>Aspiring Web Developer</h2>
+        <p>
+            Welcome to my portfolio! I love learning new things,
+            exploring technology, and creating beautiful websites.
+        </p>
+        <a href="#about" class="btn">Discover More</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me 💜</h2>
+        <p>
+            Hello! I'm Chinmayi. I'm passionate about technology,
+            creativity, and web development. I enjoy turning ideas
+            into reality through code and continuously improving
+            my skills by building new projects.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills 💻</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Communication</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects 🚀</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Personal Portfolio</h3>
+                <p>A responsive website that introduces me and showcases my skills.</p>
+            </div>
+
+            <div class="project">
+                <h3>Landing Page</h3>
+                <p>A creative landing page built using HTML and CSS.</p>
+            </div>
+
+            <div class="project">
+                <h3>Mini Project</h3>
+                <p>A simple project to practice my programming and problem-solving skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me 💌</h2>
+        <p>I'd love to connect with you!</p>
+        <p>Email: <a href="mailto:yourname@example.com">
+            yourname@example.com</a></p>
+        <p>Let's create something amazing together.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Chinmayi | Made with 💖 and creativity</p>
+    </footer>
+
+</body>
+</html>
